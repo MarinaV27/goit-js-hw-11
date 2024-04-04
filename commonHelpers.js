@@ -5,22 +5,22 @@ import{i as a,S as f}from"./assets/vendor-8c59ed88.js";(function(){const t=docum
        
         <ul class="information-list">
           <li class="item-information-container">
-            <h2 class="main-info">Likes </h2>
+            <h2 class="main-info"> Likes </h2>
               <p class="info">${e}</p>
             
           </li>
           <li class="item-information-container">
-            <h2 class="main-info"> Views</h2>
+            <h2 class="main-info"> Views </h2>
               <p class="info">${r}</p>
             
           </li>
           <li class="item-information-container">
-            <h2 class="main-info">Comments </h2>
+            <h2 class="main-info"> Comments </h2>
               <p class="info">${n}</p>
             
           </li>
           <li class="item-information-container">
-            <h2 class="main-info">Downloads </h2>
+            <h2 class="main-info"> Downloads </h2>
               <p class="info">${c}</p>
           </li>
         </ul>
