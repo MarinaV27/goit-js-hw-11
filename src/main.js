@@ -6,6 +6,10 @@ import "izitoast/dist/css/iziToast.min.css";
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
+const form = document.querySelector('.search-form');
+const list = document.querySelector('.list');
+const load = document.querySelector('.loading');
+form.addEventListener('submit', handleImages);
 
 function handleImages(event) {
     event.preventDefault();
