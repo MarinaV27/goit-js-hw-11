@@ -4,7 +4,7 @@
   | default @import url()
   |============================
 */
-
+@import url('./reset.css');
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -21,23 +21,33 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  max-width: 1440px;
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #edf2f7;
+}
+
 .search-form {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 36px;
-  margin-bottom: 32px;
+  list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 24px;
+    margin: auto;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
 }
 input[type='text'] {
-  width: 170px;
+  width: 400px;
 }
 .search-button {
   display: flex;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
@@ -49,26 +59,8 @@ input[type='text'] {
   border: none;
   background-color: #4e75ff;
 }
-@import url('./reset.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-
-  color: #242424;
-  background-color: seashell;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-.gallery {
+.list {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
@@ -76,18 +68,29 @@ input[type='text'] {
   margin-left: 20px;
 }
 
-.photo-information-container {
+.information-list {
+  display: flex;
+  font-size: 8px;
+  justify-content: space-around;
+}
+.item-information-container {
 display: flex;
-gap: 12px;
+gap: 6px;
+flex-direction: column;
 }
 
-.photo {
+.gallery-image {
   display: block;
   border-radius: 10px;
   width: 360px;
   height: 240px;
   contain: content;
 
+}
+.gallery-image:hover,
+.gallery-image:focus{
+    transform: scale(1.04);
+    transition: all 0.25s ease-in;
 }
 
 form {
@@ -96,24 +99,15 @@ form {
 }
 input {
   width: 272px;
-  height: 40px;
+  height: 24px;
   padding: 8px, 16px;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 input:active, input:hover {
-  border-color: #4E75FF;
+  border-color: #082694;
 }
 
-button {
-width: 59px;
-height: 46px;
-border-radius: 8px;
-background-color: #4E75FF;
-padding: 8px, 16px;
-border: none;
-color: #FFFFFF;
-font-size: 14px;
-}
+
 
 .loader {
   width: 160px;

@@ -17,22 +17,22 @@ export function renderImages(imagesArr) {
        
         <ul class="information-list">
           <li class="item-information-container">
-            <h2 class="main-info">Likes </h2>
+            <h2 class="main-info"> Likes </h2>
               <p class="info">${likes}</p>
             
           </li>
           <li class="item-information-container">
-            <h2 class="main-info"> Views</h2>
+            <h2 class="main-info"> Views </h2>
               <p class="info">${views}</p>
             
           </li>
           <li class="item-information-container">
-            <h2 class="main-info">Comments </h2>
+            <h2 class="main-info"> Comments </h2>
               <p class="info">${comments}</p>
             
           </li>
           <li class="item-information-container">
-            <h2 class="main-info">Downloads </h2>
+            <h2 class="main-info"> Downloads </h2>
               <p class="info">${downloads}</p>
           </li>
         </ul>
